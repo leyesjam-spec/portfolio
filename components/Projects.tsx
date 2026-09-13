@@ -8,25 +8,25 @@ export function Projects() {
         {projects.map((project) => (
           <article
             key={`${project.title}-${project.dates}`}
-            className="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+            className="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:shadow-none dark:hover:ring-1 dark:hover:ring-navy-200/30"
           >
             <div className="flex flex-wrap items-center justify-between gap-2">
-              <p className="text-sm font-medium text-navy">{project.title}</p>
+              <p className="text-sm font-medium text-navy dark:text-navy-200">{project.title}</p>
               {project.badge ? (
-                <span className="rounded-full bg-navy-50 px-2.5 py-0.5 text-xs font-medium text-navy">
+                <span className="rounded-full bg-navy-50 px-2.5 py-0.5 text-xs font-medium text-navy dark:bg-navy-900 dark:text-navy-200">
                   {project.badge}
                 </span>
               ) : null}
             </div>
-            <p className="mt-1 text-xs text-slate-500">
+            <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
               {project.role} · {project.dates}
             </p>
             {project.name ? (
-              <h3 className="mt-3 text-base font-semibold leading-snug text-slate-900">
+              <h3 className="mt-3 text-base font-semibold leading-snug text-slate-900 dark:text-white">
                 {project.name}
               </h3>
             ) : null}
-            <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600">
+            <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
               {project.description}
             </p>
             {project.liveUrl ? (
@@ -34,7 +34,7 @@ export function Projects() {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex w-fit items-center justify-center rounded-md bg-navy px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-navy-800"
+                className="mt-5 inline-flex w-fit items-center justify-center rounded-md bg-navy px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-navy-800 dark:hover:bg-navy-200 dark:hover:text-navy"
               >
                 Live Site
               </a>

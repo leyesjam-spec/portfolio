@@ -26,7 +26,7 @@ export function Section({ id, title, children, className = "" }: SectionProps) {
             : "translate-y-6 opacity-0"
         }`}
       >
-        <h2 className="text-2xl font-semibold tracking-tight text-navy sm:text-3xl">
+        <h2 className="text-2xl font-semibold tracking-tight text-navy dark:text-navy-200 sm:text-3xl">
           {title}
         </h2>
         <div className="mt-3 h-1 w-12 rounded-full bg-navy" />

@@ -25,30 +25,30 @@ const socials = [
 
 export function Contact() {
   return (
-    <Section id="contact" title="Contact" className="bg-navy-50">
+    <Section id="contact" title="Contact" className="bg-navy-50 dark:bg-slate-900">
       <div className="grid gap-4 sm:grid-cols-2">
         {contactItems.map((item) => (
           <div
             key={item.label}
-            className="rounded-xl border border-slate-200 bg-white p-5"
+            className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-950"
           >
-            <p className="text-xs font-semibold uppercase tracking-wider text-navy">
+            <p className="text-xs font-semibold uppercase tracking-wider text-navy dark:text-navy-200">
               {item.label}
             </p>
             {"href" in item && item.href ? (
               <a
                 href={item.href}
-                className="mt-2 block text-sm text-slate-700 underline-offset-2 hover:text-navy hover:underline"
+                className="mt-2 block text-sm text-slate-700 underline-offset-2 hover:text-navy hover:underline dark:text-slate-300 dark:hover:text-navy-200"
               >
                 {item.value}
               </a>
             ) : (
-              <p className="mt-2 text-sm text-slate-700">{item.value}</p>
+              <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">{item.value}</p>
             )}
           </div>
         ))}
-        <div className="rounded-xl border border-slate-200 bg-white p-5">
-          <p className="text-xs font-semibold uppercase tracking-wider text-navy">
+        <div className="rounded-xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-950">
+          <p className="text-xs font-semibold uppercase tracking-wider text-navy dark:text-navy-200">
             Social
           </p>
           <ul className="mt-2 flex flex-wrap gap-3">
@@ -59,7 +59,7 @@ export function Contact() {
                   {...(isPlaceholderUrl(social.href)
                     ? {}
                     : { target: "_blank", rel: "noopener noreferrer" })}
-                  className="text-sm font-medium text-slate-700 underline-offset-2 hover:text-navy hover:underline"
+                  className="text-sm font-medium text-slate-700 underline-offset-2 hover:text-navy hover:underline dark:text-slate-300 dark:hover:text-navy-200"
                   title={
                     isPlaceholderUrl(social.href)
                       ? `Add your ${social.label} URL in lib/data.ts`

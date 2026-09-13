@@ -4,7 +4,7 @@ import { Section } from "./Section";
 export function About() {
   return (
     <Section id="about" title="About">
-      <p className="max-w-3xl text-base leading-relaxed text-slate-600 sm:text-lg">
+      <p className="max-w-3xl text-base leading-relaxed text-slate-600 dark:text-slate-300 sm:text-lg">
         {about}
       </p>
     </Section>
