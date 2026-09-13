@@ -17,7 +17,7 @@ export const site = {
   /** Replace with the live GitHub profile URL before launch. */
   github: "https://github.com/leyesjam-spec",
   /** Replace with the live LinkedIn profile URL before launch. */
-  linkedin: "www.linkedin.com/in/christopher-james-castillo-38979a436",
+  linkedin: "https://www.linkedin.com/in/christopher-james-castillo-38979a436",
 } as const;
 
 export const about =
