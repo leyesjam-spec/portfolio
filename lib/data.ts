@@ -13,7 +13,7 @@ export const site = {
    * Replace with the production URL once the Vercel domain is set.
    * Used by metadata, sitemap.ts, and robots.ts.
    */
-  url: "https://YOUR-DOMAIN.example",
+  url: "https://christopherjamescastillo.vercel.app",
   /** Replace with the live GitHub profile URL before launch. */
   github: "https://github.com/leyesjam-spec",
   /** Replace with the live LinkedIn profile URL before launch. */
